@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DDFA0BF31B8A66A200D51515"
-               BuildableName = "didSetTest"
-               BlueprintName = "didSetTest"
-               ReferencedContainer = "container:didSetTest.xcodeproj">
+               BuildableName = "PropertyObserverBug"
+               BlueprintName = "PropertyObserverBug"
+               ReferencedContainer = "container:PropertyObserverBug.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDFA0BF31B8A66A200D51515"
-            BuildableName = "didSetTest"
-            BlueprintName = "didSetTest"
-            ReferencedContainer = "container:didSetTest.xcodeproj">
+            BuildableName = "PropertyObserverBug"
+            BlueprintName = "PropertyObserverBug"
+            ReferencedContainer = "container:PropertyObserverBug.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDFA0BF31B8A66A200D51515"
-            BuildableName = "didSetTest"
-            BlueprintName = "didSetTest"
-            ReferencedContainer = "container:didSetTest.xcodeproj">
+            BuildableName = "PropertyObserverBug"
+            BlueprintName = "PropertyObserverBug"
+            ReferencedContainer = "container:PropertyObserverBug.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDFA0BF31B8A66A200D51515"
-            BuildableName = "didSetTest"
-            BlueprintName = "didSetTest"
-            ReferencedContainer = "container:didSetTest.xcodeproj">
+            BuildableName = "PropertyObserverBug"
+            BlueprintName = "PropertyObserverBug"
+            ReferencedContainer = "container:PropertyObserverBug.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

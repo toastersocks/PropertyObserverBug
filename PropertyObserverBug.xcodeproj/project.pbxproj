@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DDFA0BF81B8A66A200D51515 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA0BF71B8A66A200D51515 /* main.swift */; };
+		DDAB05841B8BD1AE004750CE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB05831B8BD1AE004750CE /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DDFA0BF41B8A66A200D51515 /* didSetTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = didSetTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFA0BF71B8A66A200D51515 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DDAB05831B8BD1AE004750CE /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = PropertyObserverBug/main.swift; sourceTree = SOURCE_ROOT; };
+		DDFA0BF41B8A66A200D51515 /* PropertyObserverBug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PropertyObserverBug; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 		DDFA0BEB1B8A66A200D51515 = {
 			isa = PBXGroup;
 			children = (
-				DDFA0BF61B8A66A200D51515 /* didSetTest */,
+				DDFA0BF61B8A66A200D51515 /* PropertyObserverBug */,
 				DDFA0BF51B8A66A200D51515 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,26 @@
 		DDFA0BF51B8A66A200D51515 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDFA0BF41B8A66A200D51515 /* didSetTest */,
+				DDFA0BF41B8A66A200D51515 /* PropertyObserverBug */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DDFA0BF61B8A66A200D51515 /* didSetTest */ = {
+		DDFA0BF61B8A66A200D51515 /* PropertyObserverBug */ = {
 			isa = PBXGroup;
 			children = (
-				DDFA0BF71B8A66A200D51515 /* main.swift */,
+				DDAB05831B8BD1AE004750CE /* main.swift */,
 			);
+			name = PropertyObserverBug;
 			path = didSetTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DDFA0BF31B8A66A200D51515 /* didSetTest */ = {
+		DDFA0BF31B8A66A200D51515 /* PropertyObserverBug */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDFA0BFB1B8A66A200D51515 /* Build configuration list for PBXNativeTarget "didSetTest" */;
+			buildConfigurationList = DDFA0BFB1B8A66A200D51515 /* Build configuration list for PBXNativeTarget "PropertyObserverBug" */;
 			buildPhases = (
 				DDFA0BF01B8A66A200D51515 /* Sources */,
 				DDFA0BF11B8A66A200D51515 /* Frameworks */,
@@ -77,9 +78,9 @@
 			);
 			dependencies = (
 			);
-			name = didSetTest;
+			name = PropertyObserverBug;
 			productName = didSetTest;
-			productReference = DDFA0BF41B8A66A200D51515 /* didSetTest */;
+			productReference = DDFA0BF41B8A66A200D51515 /* PropertyObserverBug */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -88,6 +89,7 @@
 		DDFA0BEC1B8A66A200D51515 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "James Pamplona";
 				TargetAttributes = {
@@ -96,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DDFA0BEF1B8A66A200D51515 /* Build configuration list for PBXProject "didSetTest" */;
+			buildConfigurationList = DDFA0BEF1B8A66A200D51515 /* Build configuration list for PBXProject "PropertyObserverBug" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDFA0BF31B8A66A200D51515 /* didSetTest */,
+				DDFA0BF31B8A66A200D51515 /* PropertyObserverBug */,
 			);
 		};
 /* End PBXProject section */
@@ -118,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDFA0BF81B8A66A200D51515 /* main.swift in Sources */,
+				DDAB05841B8BD1AE004750CE /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,21 +208,26 @@
 		DDFA0BFC1B8A66A200D51515 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = PropertyObserverBug;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		DDFA0BFD1B8A66A200D51515 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = PropertyObserverBug;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DDFA0BEF1B8A66A200D51515 /* Build configuration list for PBXProject "didSetTest" */ = {
+		DDFA0BEF1B8A66A200D51515 /* Build configuration list for PBXProject "PropertyObserverBug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDFA0BF91B8A66A200D51515 /* Debug */,
@@ -229,13 +236,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFA0BFB1B8A66A200D51515 /* Build configuration list for PBXNativeTarget "didSetTest" */ = {
+		DDFA0BFB1B8A66A200D51515 /* Build configuration list for PBXNativeTarget "PropertyObserverBug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDFA0BFC1B8A66A200D51515 /* Debug */,
 				DDFA0BFD1B8A66A200D51515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

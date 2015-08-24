@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:didSetTest.xcodeproj">
+      location = "self:/Users/jambes/Desktop/Projects/didSetTest/PropertyObserverBug.xcodeproj">
    </FileRef>
 </Workspace>
